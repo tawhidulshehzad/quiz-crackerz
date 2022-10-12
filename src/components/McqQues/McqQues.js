@@ -16,7 +16,7 @@ const McqQues = (props) => {
   };
   return (
     <div>
-      <h3 className="bg-slate-200 py-2">Quiz: {question}</h3>
+      <h3 className="bg-slate-200 py-2">Quiz : {question}</h3>
       {options.map((option) => (
         <div className="flex justify-center px-3">
           <p
