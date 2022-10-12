@@ -2,7 +2,7 @@ import React from "react";
 import { useLoaderData } from "react-router-dom";
 import { LineChart, Line, XAxis, YAxis, Tooltip } from "recharts";
 
-// chart
+
 const Analysis = () => {
   const informations = useLoaderData();
   const allInformations = informations.data;
