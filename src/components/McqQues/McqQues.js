@@ -1,4 +1,5 @@
 import React from "react";
+import { toast } from "react-toastify";
 
 const McqQues = (props) => {
   // console.log(props);
@@ -10,8 +11,9 @@ const McqQues = (props) => {
     // console.log(option)
     if (option === realAnswer) {
       console.log("Answer is correct");
+      toast("Correct answer");
     } else {
-      console.log("Wrong answer");
+      toast("Wrong answer");
     }
   };
   return (
