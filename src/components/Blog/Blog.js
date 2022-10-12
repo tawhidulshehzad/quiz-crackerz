@@ -21,7 +21,12 @@ const Blog = () => {
               via numerous levels of intermediary React components. The
               component will receive props indirectly, and you, the React
               Developer, will be responsible for ensuring that everything works
-              properly. While your program may begin with a single component, as it increases in complexity, it must be progressively broken down into smaller components. We may isolate particular sections of a bigger application using components, creating a separation of concerns. If anything in your application fails, fault isolation allows you to quickly determine what went wrong.
+              properly. While your program may begin with a single component, as
+              it increases in complexity, it must be progressively broken down
+              into smaller components. We may isolate particular sections of a
+              bigger application using components, creating a separation of
+              concerns. If anything in your application fails, fault isolation
+              allows you to quickly determine what went wrong.
             </p>
           </div>
           <div className="p-4 m-1 bg-slate-200 rounded-lg text-center">
@@ -47,6 +52,21 @@ const Blog = () => {
               needs of the application and platform. The following illustration
               shows how react router’s dynamic routing works as compared to
               traditional static routing:
+            </p>
+          </div>
+          <div className="p-4 m-1 bg-slate-200 rounded-lg text-center">
+            <h2 className="font-bold ">useRef</h2>
+            <p>
+              The useRef hook was introduced in React 16.8. Before reading this
+              tutorial, you should be familiar with the ref in react. The useRef
+              hook allows you to construct a direct reference to a DOM element
+              in the functional component. The useRef method yields a mutable
+              ref object. This object has the property.current. The
+              refContainer.current property stores the value. These values are
+              available using the returning object's current property.
+              The.current property could be set to the provided parameter
+              initialValue, for example, useRef (initialValue). The object can
+              store a value for the duration of the component's lifespan.
             </p>
           </div>
         </div>
