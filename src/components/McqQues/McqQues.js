@@ -10,7 +10,7 @@ const McqQues = (props) => {
   const checkAnswer = (option) => {
     // console.log(option)
     if (option === realAnswer) {
-      console.log("Answer is correct");
+      // console.log("Answer is correct");
       toast("Correct answer");
     } else {
       toast("Wrong answer");
@@ -20,12 +20,12 @@ const McqQues = (props) => {
   const eyeClick = () => {
     toast(realAnswer);
   };
-
+  let kyeId = 1;
   return (
     <div>
       <h3 className="bg-slate-200 py-2">Quiz : {question}</h3>
       {options.map((option) => (
-        <div className="flex justify-center px-3">
+        <div key={kyeId++} className="flex justify-center px-3">
           <p
             onClick={() => checkAnswer(option)}
             className="cursor-pointer p-1 rounded-lg hover:bg-slate-200 "

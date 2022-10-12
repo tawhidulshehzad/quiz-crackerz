@@ -6,7 +6,7 @@ const Mcq = () => {
   const mcqData = useLoaderData();
 
   const { name, questions } = mcqData.data;
-  // console.log(questions)
+  // console.log(questions);
 
   return (
     <div className="text-center py-2">

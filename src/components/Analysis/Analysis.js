@@ -6,7 +6,7 @@ import { LineChart, Line, XAxis, YAxis, Tooltip } from "recharts";
 const Analysis = () => {
   const informations = useLoaderData();
   const allInformations = informations.data;
-  console.log(allInformations);
+  // console.log(allInformations);
   return (
     <div className="flex justify-center">
       <div>

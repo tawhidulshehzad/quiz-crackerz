@@ -5,6 +5,7 @@ import QuizName from "../components/QuizName/QuizName";
 const Home = () => {
   const items = useLoaderData();
   const quizzes = items.data;
+  // console.log(quizzes);
 
   return (
     <div>
