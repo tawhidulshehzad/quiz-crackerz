@@ -1,0 +1,31 @@
+.navbar {
+  text-align: center;
+}
+.verytop {
+  text-align: center;
+  background-color: rgb(216, 157, 157);
+  font-size: 20px;
+}
+
+.navbar a {
+  text-decoration: none;
+  margin-right: 15px;
+  padding: 2px;
+  font-size: 20px;
+  font-weight: 500;
+}
+.common-text {
+  display: flex;
+}
+.common-text p {
+  font-size: 25px;
+  padding: 10px;
+  position: absolute;
+  color: rgb(0, 0, 0);
+}
+.common-text img {
+  position: relative;
+  opacity: 0.1;
+  width: 100%;
+  height: 200px;
+}
