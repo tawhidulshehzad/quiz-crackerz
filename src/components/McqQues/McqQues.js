@@ -16,6 +16,11 @@ const McqQues = (props) => {
       toast("Wrong answer");
     }
   };
+
+  const eyeClick = () => {
+    toast(realAnswer);
+  };
+
   return (
     <div>
       <h3 className="bg-slate-200 py-2">Quiz : {question}</h3>
@@ -23,12 +28,20 @@ const McqQues = (props) => {
         <div className="flex justify-center px-3">
           <p
             onClick={() => checkAnswer(option)}
-            className="p-1 rounded-lg hover:bg-slate-200 "
+            className="cursor-pointer p-1 rounded-lg hover:bg-slate-200 "
           >
             {option}
           </p>
         </div>
       ))}
+      <div className="flex justify-center">
+        <img
+          onClick={() => eyeClick()}
+          className="w-5"
+          src="https://cdn-icons-png.flaticon.com/512/709/709612.png"
+          alt=""
+        />
+      </div>
     </div>
   );
 };
