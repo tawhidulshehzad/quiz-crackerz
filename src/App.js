@@ -1,4 +1,3 @@
-import logo from "./logo.svg";
 import "./App.css";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Home from "./Home/Home";
@@ -6,6 +5,7 @@ import Analysis from "./components/Analysis/Analysis";
 import Blog from "./components/Blog/Blog";
 import Main from "./layout/Main";
 import Mcq from "./components/Mcq/Mcq";
+import { ToastContainer } from "react-toastify";
 
 function App() {
   const router = createBrowserRouter([
@@ -49,6 +49,7 @@ function App() {
   return (
     <div className="App">
       <RouterProvider router={router}></RouterProvider>
+      <ToastContainer></ToastContainer>
     </div>
   );
 }
