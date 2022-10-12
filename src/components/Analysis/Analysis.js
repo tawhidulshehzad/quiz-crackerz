@@ -1,7 +1,7 @@
 import React from "react";
 import { useLoaderData } from "react-router-dom";
 import { LineChart, Line, XAxis, YAxis, Tooltip } from "recharts";
-// import Rechart from "../Rechart/Rechart";
+
 
 const Analysis = () => {
   const informations = useLoaderData();
