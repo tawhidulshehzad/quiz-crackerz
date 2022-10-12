@@ -14,7 +14,6 @@ function App() {
       path: "/",
       element: <Main></Main>,
       children: [
-        
         {
           path: "home",
           loader: async () => {
@@ -24,6 +23,9 @@ function App() {
         },
         {
           path: "analysis",
+          loader: async () => {
+            return fetch("https://openapi.programming-hero.com/api/quiz");
+          },
           element: <Analysis></Analysis>,
         },
         {
@@ -47,6 +49,7 @@ function App() {
   return (
     <div className="App">
       <RouterProvider router={router}></RouterProvider>
+
       <ToastContainer autoClose={300}></ToastContainer>
     </div>
   );
